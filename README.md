@@ -14,9 +14,9 @@ Especificação Original
 
 - Tudo com testes unitários e aceitação.
 
-Decisões técnicas e motivos
+Minhas decisões técnicas e seus motivos
 -
-- Português é a língua do projeto (classes, variáveis, tabelas, arquivos), porque nada foi especificado em relação a i18n.
+- Língua do projeto: português para visualização (URLs, HTML) e inglês internamente (classes, variáveis, tabelas, arquivos), porque facilita a i18n (e porque costumo trabalhar assim).
 
 - Professores e alunos serão armazenados na mesma tabela (*Pessoas*), para que possam ter dados comuns sem repetir colunas nas tabelas (nome, idade, sexo, documentos, etc.).
 
