@@ -11,3 +11,26 @@
  *= require_self
  *= require_tree .
  */
+table {
+	border: solid 1px;
+	width: 80%;
+	margin: 10px;
+}
+th {
+	border-bottom: dashed 1px;
+}
+td {
+	text-align: center;
+}
+
+ul#top-menu {
+	width: 60%;
+	border: solid 1px;
+	margin: 5px 10px 5px 10px;
+	padding: 5px;
+	text-align: center;
+}
+ul#top-menu li {
+	display: inline;
+	padding: 10px;
+}
