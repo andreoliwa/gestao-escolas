@@ -1,0 +1,18 @@
+%h1 Alunos
+
+%table#students
+  %thead
+    %tr
+      %th Nome
+      %th Sexo
+      %th Documento
+      %th Data de Nascimento
+  %tbody
+    - @students.each do |student|
+      %tr
+        %td= student.name
+        %td= student.male ? 'Masculino' : 'Feminino'
+        %td= student.document
+        %td= student.born_at
+
+= link_to 'Adicionar aluno', new_student_path
