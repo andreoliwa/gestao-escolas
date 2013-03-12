@@ -1,0 +1,18 @@
+%h1 Professores
+
+%table#teachers
+  %thead
+    %tr
+      %th Nome
+      %th Sexo
+      %th Documento
+      %th Data de Nascimento
+  %tbody
+    - @teachers.each do |teacher|
+      %tr
+        %td= teacher.name
+        %td= teacher.male ? 'Masculino' : 'Feminino'
+        %td= teacher.document
+        %td= teacher.born_at
+
+= link_to 'Adicionar professor', new_teacher_path
