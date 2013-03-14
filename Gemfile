@@ -9,6 +9,11 @@ gem 'sqlite3'
 
 group :development, :test do
   gem 'rspec-rails'
+
+  # http://ruby.railstutorial.org/chapters/static-pages#sec-guard
+  gem 'guard-rspec'
+  gem 'guard-spork' #, '1.2.0'
+  gem 'spork' #, '0.9.2'
 end
 
 # Gems used only for assets and not required
@@ -28,8 +33,13 @@ gem 'jquery-rails'
 gem 'haml'
 gem 'haml-rails'
 
+# Test gems on Linux
 group :test do
-  gem 'capybara', '1.1.2'
+  gem 'capybara' #, '1.1.2'
+
+  # http://ruby.railstutorial.org/chapters/static-pages#sec-guard
+  gem 'rb-inotify' #, '0.8.8'
+  gem 'libnotify' #, '0.5.9'
 end
 
 # To use ActiveModel has_secure_password
