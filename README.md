@@ -4,6 +4,8 @@ Software para gestão de escolas; controle de alunos, turmas e professores.
 
 [Veja o projeto no Pivotal Tracker](https://www.pivotaltracker.com/projects/773269)
 
+[![Build Status](https://travis-ci.org/wagnerandreoli/gestao-escolas.png)](https://travis-ci.org/wagnerandreoli/gestao-escolas)
+
 Especificação Original
 -
 - Cadastrar os alunos, as turmas, os professores e as matérias que cada professor pode ministrar.

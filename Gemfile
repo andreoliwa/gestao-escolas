@@ -35,11 +35,14 @@ gem 'haml-rails'
 
 # Test gems on Linux
 group :test do
-  gem 'capybara' #, '1.1.2'
+  gem 'capybara', '1.1.2'
 
   # http://ruby.railstutorial.org/chapters/static-pages#sec-guard
   gem 'rb-inotify' #, '0.8.8'
   gem 'libnotify' #, '0.5.9'
+
+  # http://about.travis-ci.org/docs/user/languages/ruby/
+  gem 'rake'
 end
 
 # To use ActiveModel has_secure_password
