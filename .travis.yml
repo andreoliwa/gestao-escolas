@@ -1,14 +1,16 @@
 language: ruby
 bundler_args: --without development
 rvm:
-  # For now, testing only against the version I'm actually using
+  # For now, testing only against the version I'm actually using (it's slow enough)
   - "1.9.3"
-  - "1.8.7"
-  - "1.9.2"
-  - jruby-18mode # JRuby in 1.8 mode
-  - jruby-19mode # JRuby in 1.9 mode
-  - rbx-18mode
-  - rbx-19mode
+  # Success with these versions:
+  #- "1.9.2"
+  #- rbx-19mode
+  # Failure with these versions:
+  #- "1.8.7"
+  #- jruby-18mode # JRuby in 1.8 mode
+  #- jruby-19mode # JRuby in 1.9 mode
+  #- rbx-18mode
 script:
   - RAILS_ENV=test bundle exec rake db:migrate --trace
   - bundle exec rake db:test:prepare
